@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Conflict Resolution App</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #app {
+            width: 80%;
+            max-width: 600px;
+        }
+        #chat {
+            display: none;
+        }
+        #messages {
+            border: 1px solid #ccc;
+            height: 300px;
+            overflow-y: scroll;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        input, button {
+            width: 100%;
+        }
+
+        .You {
+          color: blue;
+          font-weight: bold;
+        }
+        .AI {
+          color: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div id="session">
+            <button id="startSessionBtn">Start Session</button>
+            <input id="joinSessionInput" type="text" placeholder="Enter session ID to join">
+            <button id="joinSessionBtn">Join Session</button>
+        </div>
+        <div id="chat">
+            <div id="messages"></div>
+            <input id="messageInput" type="text" placeholder="Type your message">
+            <button id="sendMessageBtn">Send Message</button>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
