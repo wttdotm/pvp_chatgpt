@@ -5,6 +5,7 @@ This is an attempt to make a 2-player game out of GPT-4. Players enter sessions 
 ## Setup
 
 > npm install
+then
 > node server.js
 
 Go to localhost:6969
