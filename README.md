@@ -4,9 +4,9 @@ This is an attempt to make a 2-player game out of GPT-4. Players enter sessions 
 
 ## Setup
 
-> npm install
+`npm install`
 then
-> node server.js
+`node server.js`
 
 Go to localhost:6969
 Join a session, the session ID will be in the terminal output, you can do both players locally by just openning another browser window.
